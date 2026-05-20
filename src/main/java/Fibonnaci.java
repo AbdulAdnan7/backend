@@ -13,8 +13,15 @@ public class Fibonnaci {
         int a = 0;
         int b = 1;
 
+        System.out.println("Fibonacci Series: ");
+
+        if(n >= 1) {
         System.out.println(a);
+        }
+
+        if(n >=2) {
         System.out.println(b);
+        }
 
         for(int i = 2; i < n; i++) {
             int c = a + b;
@@ -24,5 +31,7 @@ public class Fibonnaci {
             a = b;
             b = c;
         }
+
+        sc.close();
     }
 }
